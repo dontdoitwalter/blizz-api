@@ -32,10 +32,7 @@ header{
 button{
     font-family:'diablo';
 }
-span{
-    padding-left:6em;
-    padding-right:6em;
-}
+
 form{
     margin:0 auto;
     text-align:center;
@@ -52,6 +49,9 @@ footer{
     top:600px;
     padding-top:5em;
 }
+.d3Prelude:hover{
+    box-shadow:0px 0px 30px 0px lightblue;
+} 
  .d3Act1:hover{
      box-shadow:0px 0px 30px 0px white;
  } 
@@ -67,3 +67,27 @@ footer{
 .d3Act5:hover{
     box-shadow:0px 0px 30px 0px orangered;
 } 
+.d3Prelude{
+    position:absolute;
+    left:10%;
+}
+.d3Act1{
+    position:absolute;
+    left:25%;
+}
+.d3Act2{
+    position:absolute;
+    left:40%;
+}
+.d3Act3{
+    position:absolute;
+    right:40%;
+}
+.d3Act4{
+    position:absolute;
+    right:25%;
+}
+.d3Act5{
+    position:absolute;
+    right:10%;
+}
