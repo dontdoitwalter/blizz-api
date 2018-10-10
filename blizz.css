@@ -1,0 +1,30 @@
+body{
+    background: url(./assets/diablo3-logo-wallpaper.jpg);
+    background-repeat:"no repeat";
+    background-size:cover;
+}
+section{
+    text-align:left;
+    margin:auto;
+    color:white;
+}
+header{
+    width: 100%;
+    height:100%;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+span{
+    padding-left:6em;
+    padding-right:6em;
+}
+form{
+    margin:0 auto;
+    text-align:center;
+}
+iframe{
+    margin-left:25%;
+    margin-right:20%;
+    margin-top:5%;
+}
