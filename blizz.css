@@ -1,7 +1,21 @@
+html{
+    height: 100%;
+    animation: glow cubic-bezier(.26,.99,.89,1.01) 6s infinite;
+}
+@keyframes glow{
+0% {    box-shadow:inset 0 45em 25em #231010, inset 0 -45em 25em #550000;}
+50%{    box-shadow:inset 0 20em 25em #231010, inset 0 -20em 25em #550000;}
+100%{    box-shadow:inset 0 45em 25em #231010, inset 0 -45em 25em #550000;}
+}
+
 body{
-    background: url(./assets/diablo3-logo-wallpaper.jpg);
-    background-repeat:"no repeat";
-    background-size:cover;
+    background-color:#231010;
+    font-family:'diablo';
+
+}
+@font-face{
+    font-family:'diablo';
+    src: url('./assets/Exocet\ Light.TTF')
 }
 section{
     text-align:left;
@@ -15,6 +29,9 @@ header{
     padding-top: 2em;
     padding-bottom: 2em;
 }
+button{
+    font-family:'diablo';
+}
 span{
     padding-left:6em;
     padding-right:6em;
@@ -24,7 +41,29 @@ form{
     text-align:center;
 }
 iframe{
-    /* margin-left:25%; */
-    margin-top:5%;
-    padding-right:5em;
+    margin: 0 auto;
+    padding-right:3.5em;
 }
+footer{
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    position:absolute;
+    top:600px;
+    padding-top:5em;
+}
+ .d3Act1:hover{
+     box-shadow:0px 0px 30px 0px white;
+ } 
+ .d3Act2:hover{
+    box-shadow:0px 0px 30px 0px blue;
+} 
+.d3Act3:hover{
+    box-shadow:0px 0px 30px 0px green;
+} 
+.d3Act4:hover{
+    box-shadow:0px 0px 30px 0px yellow;
+} 
+.d3Act5:hover{
+    box-shadow:0px 0px 30px 0px orangered;
+} 

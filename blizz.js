@@ -4,10 +4,8 @@ const locale = '?locale=en_us'
 let act = 'd3/data/act'
 let currentAct = 0;
 let url;
-
 const searchForm = document.querySelector('form');
 const section = document.querySelector('section');
-
 function actOne(){
     currentAct=0;
     actInfo();
@@ -37,22 +35,18 @@ function actInfo() {
             displayResults(json);
         });
 }
-
 function displayResults(json) {
     while (section.firstChild) {
         section.removeChild(section.firstChild);
     }
     let quests = json.acts[currentAct].quests;
-
     if (quests.length === 0) {
         console.log("No Results")
     } else {
         for (let i = 0; i < quests.length; i++) {
             let article = document.createElement('article');
             let heading = document.createElement('h2');
-
             heading.innerText = quests[i].name;
-
             article.appendChild(heading);
             section.appendChild(article);
         }

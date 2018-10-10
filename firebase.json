@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "./blizz-api",
+    "public": "./",
     "ignore": [
       "firebase.json",
       "**/.*",
