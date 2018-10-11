@@ -11,7 +11,7 @@
 <header>
 <form onSubmit="return false">
     <span></span>
-    <button type='submit' onclick="prelude()" class="d3Prelude">Prelude</button>
+    <button type='submit' onclick="preludeBtn()" class="d3Prelude" id="prelude">Prelude</button>
     <span></span>
     <button type='submit' onclick="actOne()" class="d3Act1">Act I</button>
     <span></span>
@@ -29,9 +29,12 @@
         <iframe  style="float:right"width="900" height="450" src="https://www.youtube-nocookie.com/embed/M_c1q2oMHlk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <!--Results Section-->
         <section>
-            <div id="prelude"><img src="./assets/d3 logo.png"><p>click buttons to do the things</p></div>
+            <div id="prelude"><h2>Welcome to my API Project!</h2><p>The video to your right is all of the cinematics from Diablo 3 combined into one video. In the header you can click on an Act to see what quests are in that act. Click prelude to return to this prompt. Don't worry, even though you might get a little click happy, the video will continue to play. ENJOY!</p>
+                            </div>
         </section>
+
 </div>
+<img src="./assets/d3Llogo.png" height=300px;>
 
 
 <footer>
@@ -39,6 +42,6 @@
 </footer>
 
 <script src="blizz.js" type="text/javascript"></script>
-
+  
 </body>
 </html>

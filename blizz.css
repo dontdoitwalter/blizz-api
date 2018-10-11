@@ -1,13 +1,12 @@
 html{
     height: 100%;
-    animation: glow cubic-bezier(.26,.99,.89,1.01) 6s infinite;
+    animation: glow 4s infinite;
 }
 @keyframes glow{
 0% {    box-shadow:inset 0 45em 25em #231010, inset 0 -45em 25em #550000;}
 50%{    box-shadow:inset 0 20em 25em #231010, inset 0 -20em 25em #550000;}
 100%{    box-shadow:inset 0 45em 25em #231010, inset 0 -45em 25em #550000;}
 }
-
 body{
     background-color:#231010;
     font-family:'diablo';
@@ -19,8 +18,13 @@ body{
 }
 section{
     text-align:left;
-    margin:auto;
-    color:white;
+    position:absolute;
+    color:slategray;
+    top: 25%;
+    left: 5%;
+    right: 66%;
+    font-size:20px;
+
 }
 header{
     width: 100%;
@@ -31,23 +35,34 @@ header{
 }
 button{
     font-family:'diablo';
+    background:url(./assets/d3buttonFinal.png);
+    background-repeat: "no-repeat";
+    background-size:cover;
+    color:slategray;
+    height:60px;
+    width:150px;
+    font-size:20px;
 }
-
 form{
     margin:0 auto;
     text-align:center;
 }
 iframe{
-    margin: 0 auto;
-    padding-right:3.5em;
+    position:absolute;
+    top:250px;
+    left:700px;
+}
+img{
+    position: absolute;
+    top:50%;
+    left:20%;
 }
 footer{
     text-align: center;
     font-size: 11px;
-    color: white;
+    color: slategrey;
     position:absolute;
-    top:600px;
-    padding-top:5em;
+    bottom:0;
 }
 .d3Prelude:hover{
     box-shadow:0px 0px 30px 0px lightblue;
@@ -69,25 +84,25 @@ footer{
 } 
 .d3Prelude{
     position:absolute;
-    left:10%;
+    left:8%;
 }
 .d3Act1{
     position:absolute;
-    left:25%;
+    left:23%;
 }
 .d3Act2{
     position:absolute;
-    left:40%;
+    left:38%;
 }
 .d3Act3{
     position:absolute;
-    right:40%;
+    right:38%;
 }
 .d3Act4{
     position:absolute;
-    right:25%;
+    right:23%;
 }
 .d3Act5{
     position:absolute;
-    right:10%;
+    right:8%;
 }
