@@ -68,4 +68,3 @@ function displayResults(json) {
         }
     }
 };
-  
