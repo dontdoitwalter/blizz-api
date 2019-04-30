@@ -1,9 +1,6 @@
-const baseURL = 'https://us.api.battle.net/'
-const key = '&apikey=bxaw4yds8sbrx9ta2qk2fgby28ux7jbh'
-const locale = '?locale=en_us'
-let act = 'd3/data/act'
 let currentAct = 0;
 let url;
+const req = 'https://us.api.blizzard.com/d3/data/act?locale=en_US&access_token=USAiENxOXC4fC01S8WwXckBWbQr1wAbZWR'
 const searchForm = document.querySelector('form');
 const section = document.querySelector('section');
 // let prelude = document.getElementById("#prelude")
@@ -43,8 +40,7 @@ function actFive(){
     actInfo();
 }
 function actInfo() {
-    url = baseURL + act + locale + key;
-    fetch(url).then(result => {
+    fetch(req).then(result => {
         return result.json();
     })
         .then(json => {
